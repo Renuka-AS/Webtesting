@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-07-19T21:47:07 IST" name="Suite" finished-at="2025-07-19T21:47:25 IST" duration-ms="17833">
+    <groups>
+    </groups>
+    <test started-at="2025-07-19T21:47:07 IST" name="Test" finished-at="2025-07-19T21:47:25 IST" duration-ms="17833">
+      <class name="TestNGusage.HRM">
+        <test-method signature="openapp()[pri:1, instance:TestNGusage.HRM@7db82169]" started-at="2025-07-19T21:47:07 IST" name="openapp" finished-at="2025-07-19T21:47:14 IST" duration-ms="7114" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+        <test-method signature="testlogo()[pri:2, instance:TestNGusage.HRM@7db82169]" started-at="2025-07-19T21:47:14 IST" name="testlogo" finished-at="2025-07-19T21:47:24 IST" duration-ms="10042" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testlogo -->
+        <test-method signature="login()[pri:3, instance:TestNGusage.HRM@7db82169]" started-at="2025-07-19T21:47:24 IST" name="login" finished-at="2025-07-19T21:47:24 IST" duration-ms="222" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="closeapp()[pri:4, instance:TestNGusage.HRM@7db82169]" started-at="2025-07-19T21:47:24 IST" name="closeapp" finished-at="2025-07-19T21:47:25 IST" duration-ms="366" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closeapp -->
+      </class> <!-- TestNGusage.HRM -->
+      <class name="TestNGusage.FirstTestCase">
+        <test-method signature="openapp()[pri:0, instance:TestNGusage.FirstTestCase@19fe4644]" started-at="2025-07-19T21:47:25 IST" name="openapp" finished-at="2025-07-19T21:47:25 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- openapp -->
+        <test-method signature="login()[pri:1, instance:TestNGusage.FirstTestCase@19fe4644]" started-at="2025-07-19T21:47:25 IST" name="login" finished-at="2025-07-19T21:47:25 IST" duration-ms="0" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- login -->
+        <test-method signature="logout()[pri:2, instance:TestNGusage.FirstTestCase@19fe4644]" started-at="2025-07-19T21:47:25 IST" name="logout" finished-at="2025-07-19T21:47:25 IST" duration-ms="2" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logout -->
+      </class> <!-- TestNGusage.FirstTestCase -->
+    </test> <!-- Test -->
+  </suite> <!-- Suite -->
+</testng-results>
