@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-Suite" class="navigator-link">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -50,7 +50,7 @@
               <ul>
                 <li>
                   <a href="#" panel-name="test-xml-Suite" class="navigator-link ">
-                    <span>C:\Automation\Myworokspace\webdriverproject\Webtesting\src\test\java\TestNGusage\testng.xml</span>
+                    <span>C:\Automation\Myworokspace\webdriverproject\Webtesting\src\test\java\testAnnotationDemo\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -92,7 +92,45 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">7 methods,   7 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,  3 skipped,  1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAnnotationDemo.DependSOnMethods" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title skipped">Skipped methods</span>
+                    <span class="show-or-hide-methods skipped">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods skipped suite-Suite"> (hide)</a> <!-- hide-methods skipped suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods skipped suite-Suite"> (show)</a> <!-- show-methods skipped suite-Suite -->
+                    </span>
+                    <div class="method-list-content skipped suite-Suite">
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAnnotationDemo.DependSOnMethods" class="method navigator-link" hash-for-method="advancedSearch">advancedSearch</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAnnotationDemo.DependSOnMethods" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="skipped.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testAnnotationDemo.DependSOnMethods" class="method navigator-link" hash-for-method="search">search</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content skipped suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -103,37 +141,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestNGusage.HRM" class="method navigator-link" hash-for-method="closeapp">closeapp</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestNGusage.FirstTestCase" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestNGusage.HRM" class="method navigator-link" hash-for-method="login">login</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestNGusage.FirstTestCase" class="method navigator-link" hash-for-method="logout">logout</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestNGusage.FirstTestCase" class="method navigator-link" hash-for-method="openapp">openapp</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestNGusage.HRM" class="method navigator-link" hash-for-method="openapp">openapp</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="TestNGusage.HRM" class="method navigator-link" hash-for-method="testlogo">testlogo</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testAnnotationDemo.DependSOnMethods" class="method navigator-link" hash-for-method="openapp">openapp</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -148,10 +156,10 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">TestNGusage.FirstTestCase</span>
+              <img src="failed.png"/>
+              <span class="class-name">testAnnotationDemo.DependSOnMethods</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
@@ -159,6 +167,32 @@
                   <a name="login">
                   </a> <!-- login -->
                   <span class="method-name">login</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at testAnnotationDemo.DependSOnMethods.login(DependSOnMethods.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 29 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-skipped">
+            <div class="main-panel-header rounded-window-top">
+              <img src="skipped.png"/>
+              <span class="class-name">testAnnotationDemo.DependSOnMethods</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="advancedSearch">
+                  </a> <!-- advancedSearch -->
+                  <span class="method-name">advancedSearch</span>
+                  <div class="stack-trace">java.lang.Throwable: Method testAnnotationDemo.DependSOnMethods.advancedSearch() on instance testAnnotationDemo.DependSOnMethods@11392934 depends on not successfully finished methods 
+[testAnnotationDemo.DependSOnMethods.search() on instance testAnnotationDemo.DependSOnMethods@11392934
+testAnnotationDemo.DependSOnMethods.login() on instance testAnnotationDemo.DependSOnMethods@11392934]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
@@ -166,49 +200,38 @@
                   <a name="logout">
                   </a> <!-- logout -->
                   <span class="method-name">logout</span>
+                  <div class="stack-trace">java.lang.Throwable: Method testAnnotationDemo.DependSOnMethods.logout() on instance testAnnotationDemo.DependSOnMethods@11392934 depends on not successfully finished methods 
+[testAnnotationDemo.DependSOnMethods.login() on instance testAnnotationDemo.DependSOnMethods@11392934]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="openapp">
-                  </a> <!-- openapp -->
-                  <span class="method-name">openapp</span>
+                  <a name="search">
+                  </a> <!-- search -->
+                  <span class="method-name">search</span>
+                  <div class="stack-trace">java.lang.Throwable: Method testAnnotationDemo.DependSOnMethods.search() on instance testAnnotationDemo.DependSOnMethods@11392934 depends on not successfully finished methods 
+[testAnnotationDemo.DependSOnMethods.login() on instance testAnnotationDemo.DependSOnMethods@11392934]
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 18 stack frames
+</div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-passed -->
+          </div> <!-- suite-Suite-class-skipped -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
-              <span class="class-name">TestNGusage.HRM</span>
+              <span class="class-name">testAnnotationDemo.DependSOnMethods</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="closeapp">
-                  </a> <!-- closeapp -->
-                  <span class="method-name">closeapp</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="login">
-                  </a> <!-- login -->
-                  <span class="method-name">login</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="openapp">
                   </a> <!-- openapp -->
                   <span class="method-name">openapp</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="testlogo">
-                  </a> <!-- testlogo -->
-                  <span class="method-name">testlogo</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -216,7 +239,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Automation\Myworokspace\webdriverproject\Webtesting\src\test\java\TestNGusage\testng.xml</span>
+            <span class="header-content">C:\Automation\Myworokspace\webdriverproject\Webtesting\src\test\java\testAnnotationDemo\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -225,8 +248,7 @@
 &lt;suite name=&quot;Suite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;TestNGusage.HRM&quot;/&gt;
-      &lt;class name=&quot;TestNGusage.FirstTestCase&quot;/&gt;
+      &lt;class name=&quot;testAnnotationDemo.DependSOnMethods&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
@@ -240,7 +262,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (2 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -266,40 +288,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(7);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testlogo')
-data.setCell(0, 2, 'TestNGusage.HRM')
-data.setCell(0, 3, 10042);
+data.setCell(0, 1, 'openapp')
+data.setCell(0, 2, 'testAnnotationDemo.DependSOnMethods')
+data.setCell(0, 3, 14);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'openapp')
-data.setCell(1, 2, 'TestNGusage.HRM')
-data.setCell(1, 3, 7114);
+data.setCell(1, 1, 'login')
+data.setCell(1, 2, 'testAnnotationDemo.DependSOnMethods')
+data.setCell(1, 3, 6);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'closeapp')
-data.setCell(2, 2, 'TestNGusage.HRM')
-data.setCell(2, 3, 366);
+data.setCell(2, 1, 'logout')
+data.setCell(2, 2, 'testAnnotationDemo.DependSOnMethods')
+data.setCell(2, 3, 1);
 data.setCell(3, 0, 3)
-data.setCell(3, 1, 'login')
-data.setCell(3, 2, 'TestNGusage.HRM')
-data.setCell(3, 3, 222);
+data.setCell(3, 1, 'search')
+data.setCell(3, 2, 'testAnnotationDemo.DependSOnMethods')
+data.setCell(3, 3, 0);
 data.setCell(4, 0, 4)
-data.setCell(4, 1, 'openapp')
-data.setCell(4, 2, 'TestNGusage.FirstTestCase')
-data.setCell(4, 3, 2);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'logout')
-data.setCell(5, 2, 'TestNGusage.FirstTestCase')
-data.setCell(5, 3, 2);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'login')
-data.setCell(6, 2, 'TestNGusage.FirstTestCase')
-data.setCell(6, 3, 0);
+data.setCell(4, 1, 'advancedSearch')
+data.setCell(4, 2, 'testAnnotationDemo.DependSOnMethods')
+data.setCell(4, 3, 0);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 21 ms</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -325,37 +339,16 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">TestNGusage.HRM</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testAnnotationDemo.DependSOnMethods</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">openapp</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <span class="method-name">testlogo</span>
-                <span class="method-start">7131 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
+                <img src="failed.png">
+                </img>
                 <span class="method-name">login</span>
-                <span class="method-start">17180 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">closeapp</span>
-                <span class="method-start">17404 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">TestNGusage.FirstTestCase</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">openapp</span>
-                <span class="method-start">17776 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">login</span>
-                <span class="method-start">17779 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">logout</span>
-                <span class="method-start">17783 ms</span>
+                <span class="method-start">21 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

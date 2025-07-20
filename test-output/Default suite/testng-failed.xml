@@ -3,13 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="TestNGusage.HRM">
+      <class name="assertioons.AssertionsDemo">
         <methods>
-          <include name="closeapp"/>
-          <include name="testlogo"/>
-          <include name="login"/>
+          <include name="testTitle"/>
         </methods>
-      </class> <!-- TestNGusage.HRM -->
+      </class> <!-- assertioons.AssertionsDemo -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
