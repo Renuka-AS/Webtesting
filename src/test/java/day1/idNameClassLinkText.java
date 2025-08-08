@@ -21,6 +21,8 @@ public class idNameClassLinkText {
 	  //driver.findElement(By.xpath("//input[@id='nav-search-submit-button']")).click();
 	  
 	 System.out.println("clicked and searched");
+	 System.out.println("passed");
+	 driver.quit();
 	}
 
 }

@@ -9,6 +9,8 @@ public class youtube {
 		// TODO Auto-generated method stub
 	WebDriver	driver=new ChromeDriver();
 	driver.get("https://www.youtube.com");
+	System.out.println("opened youtube");
+	driver.quit();
 
 	}
 
