@@ -12,13 +12,14 @@ public class Dropdown_select_class {
 	WebDriver	driver=new ChromeDriver();
 	driver.get("https://testautomationpractice.blogspot.com/");
 	driver.manage().window().maximize();
-	WebElement dropdowm = driver.findElement(By.xpath("//label[@for='country']"));
+	WebElement dropdown = driver.findElement(By.id("country"));
 	System.out.println("passed");
-		Select sel = new Select(dropdowm);
-		//sel.selectByVisibleText("India");
-		sel.selectByIndex(1);
+		Select sel = new Select(dropdown);
+		sel.selectByVisibleText("India");
+		//sel.selectByIndex(1);
 		//sel.selectByValue("India");
 		System.out.println("Dropdown selction passed");
+	
 	}
 
 }
