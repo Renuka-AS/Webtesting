@@ -13,19 +13,28 @@ public static void main(String[] args) throws InterruptedException {
 	WebDriver driver =new ChromeDriver();
 	driver.manage().window().maximize();
 	driver.get("https://testautomationpractice.blogspot.com/?m=1");
+	
+	//1. we need to check how many pages are present
+	
+	
+	
 	int totalPages = driver.findElements(By.xpath("//ul[@id='pagination']/li")).size();
 
 	 /*List<WebElement> page_count = driver.findElements(By.xpath("//ul[@id=\"pagination\"]/li"));
 	page_count.size();*/
 	System.out.println("passed page count: "+totalPages);
+	//2. we should able click that pages
 	for(int i=1;i<=totalPages;i++)
 	{
 		if(i>1)
 		{
+			
 		WebElement	current_page=driver.findElement(By.xpath("//ul[@id='pagination']//a[text()="+i+"]"));
 					current_page. click();
 		}
 		Thread.sleep(1000);
+		//3. we should be readable that page data
+
 		//Reading data from the page
 		int total_No_rows = driver.findElements(By.xpath("//table[@id='productTable']/tbody/tr")).size();
 		System.out.println("total number of rows "+total_No_rows);
