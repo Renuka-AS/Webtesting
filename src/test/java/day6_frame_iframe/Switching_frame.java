@@ -9,7 +9,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class Switching_frame {
 	
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 	WebDriver	driver =new ChromeDriver();
 	driver.get("https://ui.vision/demo/webtest/frames/");
 
@@ -46,12 +46,13 @@ public class Switching_frame {
 	WebElement frame5 = driver.findElement(By.xpath("//frame[@src='frame_5.html']"));
 	driver.switchTo().frame(frame5);
 	driver.findElement(By.xpath("/html/body/center/a")).click();
-	
-	driver.findElement(By.xpath("//img[@alt='Ui.Vision by a9t9 software - Image-Driven Automation']"));
+	Thread.sleep(5000);
+	driver.findElement(By.id("logo"));
+	//driver.findElement(By.id("logo"));
 	System.out.println("logo is present");
 	
-	
-	
+	driver.switchTo().defaultContent();
+	driver.quit();
 	
 	}
 
