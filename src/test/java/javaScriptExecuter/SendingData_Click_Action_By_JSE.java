@@ -26,11 +26,11 @@ public class SendingData_Click_Action_By_JSE {
 		Js.executeScript("arguments[0].setAttribute('value','Allen')", Inputbox);
 		Thread.sleep(5000);
 		
-		WebElement radioBtn = driver.findElement(By.xpath("//input[@value=\"female\"]"));
+		WebElement radioBtn = driver.findElement(By.xpath("//input[@value='female']"));
 		Js.executeScript("arguments[0].click",radioBtn);
-		
-		System.out.println("Executed cliking by JSE");
 		Thread.sleep(5000);
+		System.out.println("Executed cliking by JSE");
+		//Thread.sleep(5000);
 		driver.quit();
 
 	}
