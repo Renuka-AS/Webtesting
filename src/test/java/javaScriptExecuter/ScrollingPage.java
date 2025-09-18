@@ -7,6 +7,7 @@ import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+//ScrollBar is not a WEBELEMENT It is browser action , we can handel it by JavaScriptExecutor 
 //Scroll down page till element is visible, check why this condition is not working
 public class ScrollingPage {
 
